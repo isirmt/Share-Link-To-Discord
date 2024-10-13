@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Options</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      -webkit-user-select: none;
+      user-select: none;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      width: 100%;
+      height: 100svh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      width: 100%;
+      background-color: #5865f2;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    footer {
+      background-color: #5865f2;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.25rem;
+    }
+
+    label,
+    input {
+      display: block;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+      appearance: none;
+      border-style: solid;
+      border-radius: 9999px;
+      padding: .45rem 1.5rem;
+      width: 50%;
+      font-size: 1rem;
+      -webkit-user-select: all;
+      user-select: all;
+    }
+
+    button {
+      appearance: none;
+      padding: .3rem 3rem;
+      border-radius: 9999px;
+      background-color: #5865f2;
+      border-style: solid;
+      border-width: .15rem;
+      border-color: #4651cc;
+      color: white;
+      cursor: pointer;
+      font-size: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: background-color .15s;
+    }
+
+    button:hover {
+      background-color: #4651cc;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Share Link To Discord</h1>
+  </header>
+  <main>
+    <label for="webhook-url">Discord Webhook URL</label>
+    <input type="text" id="webhook-url" placeholder="Enter your Webhook URL">
+    <button id="save">Save</button>
+  </main>
+  <footer>
+    <a target="_blank" rel="noopener noreferrer" href="https://github.com/isirmt/Share-Link-To-Discord">src on
+      GitHub</a>
+  </footer>
+  <script src="options.js"></script>
+</body>
+
+</html>

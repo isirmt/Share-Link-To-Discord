@@ -2,7 +2,7 @@
   "name": "Share Link To Discord",
   "manifest_version": 3,
   "version": "0.1",
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["storage", "activeTab", "scripting"],
   "action": {
     "default_icon": "img/icon_16.png"
   },
@@ -13,5 +13,6 @@
   },
   "background": {
     "service_worker": "background.js"
-  }
+  },
+  "options_page": "options.html"
 }
